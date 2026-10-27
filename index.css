@@ -1,0 +1,82 @@
+/* HotelPro (Roomly) - Custom Design & Polish */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --accent-gold: #ffc107;
+  --dark-bg: #121826;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #2b303a;
+  background-color: #f8fafc;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Card hover animation */
+.room-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 1rem;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+.room-card-img {
+  transition: transform 0.4s ease;
+}
+
+.room-card:hover .room-card-img {
+  transform: scale(1.04);
+}
+
+/* Rounded Utilities */
+.rounded-4 {
+  border-radius: 1.25rem !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Button & Nav Polish */
+.navbar-brand {
+  letter-spacing: -0.5px;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Form Polish */
+.form-control:focus,
+.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* Scrollbar polish */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
